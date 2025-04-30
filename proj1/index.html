@@ -1,177 +1,186 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/logo-aula.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/logo-aula.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Projeto-1</title>
-
-    <style>
-
-        /*Configurações gerais*/
-        :root{
-
-            --preto: black;
-            --branco: white;
-            --cinza: rgb(221,220,220);
-
-        }
-
-
-        *{
-            margin: 0;
-            border: 0;
-            padding: 0;
-        }
-
-        html{
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 1em;
-        }
-
-        header{
-            background-color: var(--preto);
-            color: var(--branco);
-            padding: 1%;
-        }
-
-
-        body{
-            background-color: var(--cinza);
-        }
-
-        main{
-            background-color: var(--branco);
-            margin: auto;
-            padding: 1%;
-            width: 90%;
-            border-radius: 10px;
-            margin-top: 1%;
-            box-shadow: 0.5px 0.5px 10px 0px;
-        }
-
-
-        /*Configurações de Headlines*/
-        h1{
-            font-size: 2em;
-        }
-
-        h2{
-            font-size: 1.5em;
-        }
-
-        h3{
-            font-size: 1.5em;
-        }
-
-        h4{
-            font-size: 1em;
-        }
-
-        h1, h2, h3, h4, h5, h6{
-            padding-top: 0.5%;
-            padding-bottom: 0.5%;
-        }
-
-        /*Configurações de imagens*/
-        img{
-            width: 100%;
-            padding-top: 2%;
-        }
-
-        /*Configurações de parágrafos*/
-        p{
-            padding-top: 1%;
-            padding-bottom: 1%;
-
-        }
- 
-
-
-    </style>
-
-</head>
-<body>
-
+  </head>
+  <body>
     <!--Cabeçalho-->
     <header>
-        <h3>TecTreinamentos Informática</h3>
-        <h4>Desenvolvimento Front End</h4>
+      <h3>TecTreinamentos Informática</h3>
+      <h4>Desenvolvimento Front End</h4>
+      <!--Aqui vamos inserir os links-->
+      <nav>
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Cursos</a>
+      </nav>
     </header>
-
 
     <!--Aqui vamos inserir os links-->
     <nav></nav>
-
-
+    <br />
+    <!--A classe é  utilizada quando temos necessidade de usar a mesma formataçãoos em vários elementos-->
+    <div class="separador"></div>
+    <br />
     <main>
+      <article>
+        <h1>Desenvolvimento Front End: Curso Completo e essencial</h1>
 
-        <article>
-            <h1>Desenvolvimento Front End: Curso Completo e essencial</h1>
+        <h2>
+          Aprenda com especialista e torne-se um(a) desenvolvedor(a) Front-End!
+        </h2>
 
-            <h2>Aprenda com especialista e torne-se um(a) desenvolvedor(a) Front-End!</h2>
+        <p>
+          Você já imaginou criar sites que impressionam tanto pelo visual quanto
+          pela performance?
+        </p>
+        <p>
+          O front-end é a peça-chave por trás das interfaces que vemos e
+          interagimos na web. Se você quer dominar essa área e conquistar
+          oportunidades no mercado de tecnologia, nosso curso de Front-End é o
+          caminho ideal!
+        </p>
 
+        <p>
+          Neste curso, você aprenderá tudo que precisa para se tornar um
+          desenvolvedor front-end completo, capaz de criar experiências
+          incríveis para os usuários.
+        </p>
+        <p>
+          Não importa se você é iniciante ou já tem algum conhecimento, o
+          conteúdo foi planejado para levar você do básico ao avançado,
+          garantindo o domínio das principais ferramentas e tecnologias.
+        </p>
 
-            <p>Você já imaginou criar sites que impressionam tanto pelo visual quanto pela performance?</p>
-            <p>O front-end é a peça-chave por trás das interfaces que vemos e interagimos na web. Se você quer dominar essa área e conquistar oportunidades no mercado de tecnologia, nosso curso de Front-End é o caminho ideal!</p>
+        <picture>
+          <source
+            media="(max-width: 800px)"
+            srcset="img/imagem2.png"
+            alt="analista de sistemas"
+          />
+          <img src="img/imagem1.png" alt="analista de sistemas" />
+        </picture>
+        <br />
 
-            <p>Neste curso, você aprenderá tudo que precisa para se tornar um desenvolvedor front-end completo, capaz de criar experiências incríveis para os usuários.</p>
-            <p>Não importa se você é iniciante ou já tem algum conhecimento, o conteúdo foi planejado para levar você do básico ao avançado, garantindo o domínio das principais ferramentas e tecnologias.</p>
+        <button>Saiba mais</button>
 
-            <picture>
-                <source media="(max-width: 800px)" srcset="img/imagem2.png" alt="analista de sistemas">
-                <img src="img/imagem1.png" alt="analista de sistemas">
-            </picture>
-            <br>
-            <h2>O que você vai aprender?</h2>
+        <br />
+        <h2>O que você vai aprender?</h2>
 
-            <p>HTML5 e CSS3 : Domine a estrutura e o estilo das páginas web.</p>
+        <p>HTML5 e CSS3 : Domine a estrutura e o estilo das páginas web.</p>
 
-            <p>JavaScript : Torne seus sites dinâmicos e interativos com uma das linguagens mais populares do mundo.</p>
+        <p>
+          JavaScript : Torne seus sites dinâmicos e interativos com uma das
+          linguagens mais populares do mundo.
+        </p>
 
-            <p>Design Responsivo : Crie sites que se adaptam a qualquer tela, seja mobile, tablet ou desktop.</p>
+        <p>
+          Design Responsivo : Crie sites que se adaptam a qualquer tela, seja
+          mobile, tablet ou desktop.
+        </p>
 
-            <p>Otimização de Desempenho : Técnicas para garantir que suas páginas sejam carregadas rapidamente e proporcionem uma experiência fluida.</p>
+        <p>
+          Otimização de Desempenho : Técnicas para garantir que suas páginas
+          sejam carregadas rapidamente e proporcionem uma experiência fluida.
+        </p>
 
-            <h2>Por que esse curso é ideal para você?</h2>
+        <h2>Por que esse curso é ideal para você?</h2>
 
-            <p><strong>Metodologia Prática :</strong> Você aprenderá codificando, com exercícios reais e testes que vão solidificar seu conhecimento.<br>
+        <p>
+          <strong>Metodologia Prática :</strong> Você aprenderá codificando, com
+          exercícios reais e testes que vão solidificar seu conhecimento.<br />
 
-            <strong>Projetos Reais :</strong> Desenvolva projetos completos para montar um portfólio profissional e atrair a atenção de recrutadores.<br>
+          <strong>Projetos Reais :</strong> Desenvolva projetos completos para
+          montar um portfólio profissional e atrair a atenção de
+          recrutadores.<br />
 
-            <strong>Acesso Vitalício :</strong> Aprenda no seu ritmo e tenha acesso ao conteúdo sempre que precisar.<br>
+          <strong>Acesso Vitalício :</strong> Aprenda no seu ritmo e tenha
+          acesso ao conteúdo sempre que precisar.<br />
 
-            <strong>Suporte Exclusivo :</strong> Tire suas dúvidas diretamente com especialistas que atuam no mercado e estão prontos para ajudá-lo no futuro.<br>
+          <strong>Suporte Exclusivo :</strong> Tire suas dúvidas diretamente com
+          especialistas que atuam no mercado e estão prontos para ajudá-lo no
+          futuro.<br />
 
-            <strong>Certificação Reconhecida :</strong> Ao concluir o curso, você recebe um certificado que comprova seu conhecimento e pode ser um diferencial no seu currículo.</p>
+          <strong>Certificação Reconhecida :</strong> Ao concluir o curso, você
+          recebe um certificado que comprova seu conhecimento e pode ser um
+          diferencial no seu currículo.
+        </p>
 
-            <h2>Para quem é este curso?</h2>
+        <h2>Para quem é este curso?</h2>
 
-            <p>Iniciantes : Não tem experiência com programação? Sem problemas! Nosso curso foi pensado para introduzir você aos conceitos fundamentais, com uma curva de aprendizado suave e prática.</p>
+        <p>
+          Iniciantes : Não tem experiência com programação? Sem problemas! Nosso
+          curso foi pensado para introduzir você aos conceitos fundamentais, com
+          uma curva de aprendizado suave e prática.
+        </p>
 
-            <p>Desenvolvedores em Transição de Carreira : Se você já tem experiência em outras áreas da tecnologia, mas quer migrar para o front-end, este curso vai acelerar seu processo de transição.</p>
+        <p>
+          Desenvolvedores em Transição de Carreira : Se você já tem experiência
+          em outras áreas da tecnologia, mas quer migrar para o front-end, este
+          curso vai acelerar seu processo de transição.
+        </p>
 
-            <p>Profissionais de Design : Se você é designer e deseja levar suas habilidades para o próximo nível, criando sites completos e funcionais, este curso será uma ótima adição ao seu repertório.</p>
+        <p>
+          Profissionais de Design : Se você é designer e deseja levar suas
+          habilidades para o próximo nível, criando sites completos e
+          funcionais, este curso será uma ótima adição ao seu repertório.
+        </p>
 
-            <h2>Vantagens de Aprender Front-End Hoje</h2>
+        <h2>Vantagens de Aprender Front-End Hoje</h2>
 
-            <p>A demanda por desenvolvedores front-end não para de crescer, já que a presença digital das empresas é cada vez mais essencial. Sites bem construídos e funcionais são uma necessidade, e profissionais que dominam as técnicas de front-end estão sendo disputados no mercado.</p>
+        <p>
+          A demanda por desenvolvedores front-end não para de crescer, já que a
+          presença digital das empresas é cada vez mais essencial. Sites bem
+          construídos e funcionais são uma necessidade, e profissionais que
+          dominam as técnicas de front-end estão sendo disputados no mercado.
+        </p>
 
-            <p><strong>Altos Salários :</strong>s empresas pagam bem por quem sabe criar sites modernos e eficientes.<br>
+        <p>
+          <strong>Altos Salários :</strong>s empresas pagam bem por quem sabe
+          criar sites modernos e eficientes.<br />
 
-            <strong>Flexibilidade :</strong> Trabalhe em empresas renomadas ou atue como freelancer, criando sua própria carteira de clientes.<br>
+          <strong>Flexibilidade :</strong> Trabalhe em empresas renomadas ou
+          atue como freelancer, criando sua própria carteira de clientes.<br />
 
-            <strong>Tecnologia em Constante Evolução :</strong>ront-end evolui rapidamente, e aprender essas habilidades agora vai garantir que você esteja preparado para o futuro.</p>
-
-        </article>
-
-
-        <section></section>
+          <strong>Tecnologia em Constante Evolução :</strong>ront-end evolui
+          rapidamente, e aprender essas habilidades agora vai garantir que você
+          esteja preparado para o futuro.
+        </p>
+      </article>
     </main>
+    <br />
+    <div class="separador-conteudo"></div>
+    <br />
 
-    <aside></aside>
+    <aside>
+      <section id="grid-conteudo">
+        <div class="grid">
+          <div>Conteúdo1</div>
+          <div>Conteúdo2</div>
+          <div>Conteúdo3</div>
+          <div>Conteúdo4</div>
+          <div>Conteúdo5</div>
+          <div>Conteúdo6</div>
+        </div>
+      </section>
+    </aside>
+    <br />
+    <div class="separador-conteudo"></div>
+    <br />
 
-    <footer></footer>
-    
-</body>
+    <footer>
+      <h3>TecTreinamentos Informática</h3>
+      <h4>Desenvolvimento Front End</h4>
+      <br />
+      <p>
+        Contato: joaov.castro95@gmail.com<br />
+        whatapp: (11) 99999-9999<br />
+        CNPJ: 99.999.999/0001-99<br />
+      </p>
+    </footer>
+  </body>
 </html>
