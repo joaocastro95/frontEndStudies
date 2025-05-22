@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat&display=swap');
+
+
+
 /*Configurações gerais*/
 :root {
   --preto: black;
@@ -22,10 +26,11 @@
 html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
+  scroll-behavior: smooth;
 }
 
 header {
-  background-color: var(--corprojeto1);
+  background: linear-gradient(var(--corprojeto6), var(--corprojeto1), var(--corprojeto1), var(--corprojeto1));
   color: var(--branco);
   position: fixed;
   width: 100%;
@@ -54,7 +59,7 @@ nav a:hover {
 }
 
 footer {
-  background-color: var(--corprojeto1);
+  background: linear-gradient(var(--corprojeto1), var(--corprojeto6), var(--corprojeto6), var(--corprojeto6));
   color: var(--branco);
   text-align: center;
   font-weight: bold;
@@ -95,15 +100,40 @@ aside {
 
 /*Configurações de Headlines*/
 h1 {
-  font-size: 2em;
-  margin-top: 3%;
+  font-size: 3em;
+  margin-top: 1%;
   text-align: center;
-  color: var(--corprojeto1)
+  color: var(--corprojeto1);
+  font-family: "Kaushan Script", cursive;
+  text-shadow: 1px 1px 1px var(--corprojeto6);
 }
 
 h2 {
-  font-size: 1.5em;
-  color: var(--corprojeto1)
+  font-size: 2.5em;
+  color: var(--corprojeto1);
+  text-align: center;
+  text-shadow: 1px 1px 1px var(--corprojeto6);
+  font-style: italic;
+}
+
+/*Configurações de Headlines para dispositivos móveis*/
+@media(min-width= 320px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2.5em;
+    margin-top: 1%;
+    text-align: center;
+    color: var(--corprojeto1);
+    font-family: "Kaushan Script", cursive;
+    text-shadow: 1px 1px 1px var(--corprojeto6);
+  }
+  
+  h2 {
+    font-size: 2em;
+    color: var(--corprojeto1);
+    text-align: center;
+    text-shadow: 1px 1px 1px var(--corprojeto6);
+    font-style: italic;
+}
 }
 
 h3 {
@@ -164,6 +194,15 @@ p {
 .separador-conteudo {
   margin-top: 0.5%;
 }
+.separador-conteudo-opcoes {
+  margin-top: 8%;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .separador-conteudo-opcoes {
+    margin-top: 25%;
+  }
+}
 
 /*configurações de divs para dispositivos móveis*/
 
@@ -177,8 +216,9 @@ p {
 }
 
 /*Configurações da grade de conteúdo*/
-#grid-conteudo {
-  background-color: var(--cinza);
+.grid-conteudo {
+  background-color: var(--branco);
+  padding: 0.5%;
 }
 
 .grid {
@@ -186,13 +226,15 @@ p {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   max-width: 1024px;
   margin: auto;
-  gap: 2px;
+  gap: 8px;
 }
 
 .grid div {
   background-color: var(--branco);
   text-align: center;
   padding: 2px;
+  box-shadow: 1px 1px 2px var(--corprojeto6);
+  border-radius: 20px;
 }
 
 /*Configurações de botões*/
@@ -214,4 +256,30 @@ button {
 button:hover {
   background-color: var(--verde2);
   cursor: pointer;
+}
+
+
+/*whatsapp*/
+
+#whats {
+width: 100px;
+height: 50px;
+right: 0;
+bottom: 0;
+position: fixed;
+text-align: center;
+margin: 6em;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  #whats {
+    width: 90px;
+    height: 40px;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    margin: 6em;
+    margin-right: 9px;
+  }
 }
