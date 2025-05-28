@@ -28,6 +28,7 @@ header {
   background-color: var(--violt);
   color: var(--branco);
   padding: auto ;
+  padding-top: 10px;
   position: fixed;
   width: 100%;
   text-align: center;
@@ -63,7 +64,7 @@ footer {
 }
 
 body {
-  background-color: var(--cinza);
+  background-color: var(--branco);
 }
 
 main {
@@ -71,8 +72,6 @@ main {
   margin: auto;
   padding: 1%;
   width: 90%;
-  border-radius: 10px;
-  box-shadow: 0.5px 0.5px 10px 0px;
 }
 
 aside {
@@ -157,7 +156,29 @@ p {
 
 /*Configurações da grade de conteúdo*/
 .grid-conteudo {
-  background-color: var(--cinza);
+  background-color: var(--branco);
+  padding-top: 150px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  max-width: 1024px;
+  margin: auto;
+  gap: 10px;
+}
+
+.grid div {
+  background-color: var(--branco);
+  text-align: center;
+  padding: 2px;
+}
+
+/*Configurações de Grid para mobile*/
+@media (min-width: 320px) and (max-width: 1024px) {
+.grid-conteudo {
+  background-color: var(--branco);
+  padding-top: 105px;
 }
 
 .grid {
@@ -173,6 +194,8 @@ p {
   text-align: center;
   padding: 2px;
 }
+}
+
 
 /*Configurações de botões*/
 button {
