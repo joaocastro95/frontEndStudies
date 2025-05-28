@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/sb-logo.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Saúde e beleza</title>
   </head>
   <body>
@@ -20,77 +21,138 @@
         <a href="#">Cursos</a>
       </nav>-->
     </header>
+    <!--Botão de whats-->
+    <div id="whats">
+        <p><strong>Posso ajudar?</strong></p>
+        <a href="https://wa.me/5513991030966?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20pedido%20%F0%9F%8D%9B!">
+        <img src="img/whats.webp" alt="whatsapp" />
+    </a>
+    </div>
+    <br>
     <!-- Vamos inserir o topo complementar-->
 
     <section class="grid-conteudo">
       <div class="grid">
         <div>
-          <img src="img/topo-site.webp" alt="Enfermeira Saúde e Beleza" />
+          <br>
+          <img class="img-site" src="img/topo-site.webp" alt="Enfermeira Saúde e Beleza">
         </div>
 
         <div>
+          <br>
           <h1>Agende sua avaliação hoje mesmo</h1>
           <br />
-          <h2>Seja a sua prioridade</h2>
+          <h2>Seja a sua prioridade, cuide da sua saúde e bem estar e tenha uma vida plena.</h2>
+
+          <script>
+            function escrita(elemento) {
+              const textoArray = elemento.innerHTML.split('');
+              elemento.innerHTML = '';
+              textoArray.forEach((letra, i) => {
+                setTimeout(() => {
+                  elemento.innerHTML += letra;
+                }, 50 * i);
+              });
+            }
+
+            const animacao = document.querySelector('h2');
+            escrita(animacao);
+
+          </script>
+
+          <br>
           <p>
             O autocuidado é um ato de amor próprio, priorize-se e cuide de si
             mesmo. <br />
             Descubra o bem-estar pessoal pode irradiar para todas as áreas da
             sua vida!
           </p>
+          <br>
+            <a class="btn" href="#">Agendar avaliação</a>
+
         </div>
       </div>
+
+
     </section>
 
-    <br />
+    <br>
 
     <main>
       <article>
         <h2>Seja bem vindo(a)!</h2>
 
-        <h2>Saúde & Beleza - Cuidando de Você por Dentro e por Fora</h2>
+        <h2>Saúde & Beleza - Cuidando de Você por Dentro e por Fora </h2>
 
         <p>
-          Nossa principal tarefa é ajudar cada pessoa a se redescobrir e a
-          cultivar o autocuidado como parte essencial de sua rotina.
-          <br />
-          Acreditamos que a verdadeira beleza vem de um corpo e mente
-          equilibrados, e, para isso, oferecemos um espaço dedicado a práticas
-          que melhoram a saúde e promovem o bem-estar.
+        Nossa principal tarefa é ajudar cada pessoa a se redescobrir e a cultivar o autocuidado como parte essencial de sua rotina.
+        <br>
+        Acreditamos que a verdadeira beleza vem de um corpo e mente equilibrados, e, para isso, oferecemos um espaço dedicado a práticas que melhoram a saúde e promovem o bem-estar.
         </p>
 
+        <br>
+
+        <div class="video"> <iframe width="560" height="315" src="https://www.youtube.com/embed/DlL5cIxgHbw?si=0DOTJe_4xxywyrz7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        </div>
+        <br>
+        <a class="btn" href="#">Saiba mais</a>
+
+        <br>
+
         <h2>Nossos Serviços</h2>
-        <br />
+        <br>
         <p>
-          Estética Facial e Corporal : Oferecemos soluções inovadoras, sempre
-          respeitando a individualidade de cada cliente. Desde limpeza de pele
-          até terapias de rejuvenescimento, nossa equipe está preparada para
-          proporcionar uma experiência única e relaxante. Cuidados Capilares :
-          Nossos especialistas oferecem cuidados personalizados para o
-          fortalecimento, hidratação e revitalização dos fios. Trabalhamos com
-          produtos de alta qualidade para todos os tipos de cabelo. Bem-estar e
-          Relaxamento : Yoga, massagens e terapias alternativas estão entre os
-          serviços que promovem relaxamento e recuperação. Nosso objetivo é
-          criar um ambiente onde cada pessoa possa relaxar e recarregar suas
-          energias. Consultoria de Autocuidado : Oferecemos sessões para quem
-          deseja criar uma rotina de beleza e saúde personalizada, entendendo o
-          que é essencial para alcançar um equilíbrio no dia a dia.
+        <ul>
+          <li><strong>Estética Facial e Corporal:</strong> Oferecemos soluções inovadoras, sempre respeitando a individualidade de cada cliente. Desde limpeza de pele até terapias de rejuvenescimento, nossa equipe está preparada para proporcionar uma experiência única e relaxante.</li><br>
+          <li><strong>Cuidados Capilares:</strong> Nossos especialistas oferecem cuidados personalizados para o fortalecimento, hidratação e revitalização dos fios. Trabalhamos com produtos de alta qualidade para todos os tipos de cabelo.</li><br>
+          <li><strong>Bem-estar e Relaxamento:</strong> Yoga, massagens e terapias alternativas estão entre os serviços que promovem relaxamento e recuperação. Nosso objetivo é criar um ambiente onde cada pessoa possa relaxar e recarregar suas energias.</li><br>
+          <li><strong>Consultoria de Autocuidado:</strong> Oferecemos sessões para quem deseja criar uma rotina de beleza e saúde personalizada, entendendo o que é essencial para alcançar um equilíbrio no dia a dia.</li><br>
+        </ul>
+        <br>
+
+
+        <!--Nesta sessão exibir serviços-->
+
+        <p id="servicos">CLIQUE EM AGENDAR E GANHE UMA SESSÃO GRÁTIS</p>
+        <section class="grid-equipe">
+        <div class="grid-equipe-sb">
+
+          <div> 
+            <img src="img/facial.webp" alt="Facial"> <br> 
+            <a class="btn" href="#">Agendar</a><br> 
+          </div>
+
+          <div> 
+            <img src="img/cabelo.webp" alt="Cabelo"> <br> 
+            <a class="btn" href="#">Agendar</a><br>
+          </div>
+
+          <div> 
+            <img src="img/relaxamento.webp" alt="Relaxamento"> <br> 
+            <a class="btn" href="#">Agendar</a><br> 
+          </div>
+
+
+
+        </div>
+      </section>
+
         </p>
 
         <h2>Nossa Missão</h2>
-        <br />
+        <br>
 
         <p>
-          Queremos fazer parte da sua jornada de autocuidado, oferecendo mais
-          que tratamentos – proporcionando experiências.
-          <br />
-          Acreditamos que pequenos cuidados diários transformam vidas e
-          fortalecem a confiança, permitindo que cada pessoa possa se sentir bem
-          consigo mesma.
-          <br />
-          Na Saúde & Beleza, estamos aqui para apoiar sua beleza única e
-          autêntica.
+        Queremos fazer parte da sua jornada de autocuidado, oferecendo mais que tratamentos – proporcionando experiências.
+        <br>
+        Acreditamos que pequenos cuidados diários transformam vidas e fortalecem a confiança, permitindo que cada pessoa possa se sentir bem consigo mesma. 
+        <br>
+        Na Saúde & Beleza, estamos aqui para apoiar sua beleza única e autêntica.
+
+
         </p>
+
       </article>
     </main>
 
@@ -99,30 +161,58 @@
     <br />
 
     <aside>
-      <section class="grid-conteudo">
-        <div class="grid">
-          <div>Conteúdo1</div>
-          <div>Conteúdo2</div>
-          <div>Conteúdo3</div>
-          <div>Conteúdo4</div>
-          <div>Conteúdo5</div>
-          <div>Conteúdo6</div>
+      <h2>Conheça nossa equipe de especialistas</h2>
+
+      <section class="grid-equipe">
+        <div class="grid-equipe-sb">
+
+          <div> 
+            <img class="img-site" src="img/equipe1.webp" alt="Funcionário(a) 1"> <br> 
+            <a class="btn" href="#">Dra. Aline</a><br> 
+            <p class="especialistas">Estética Facial e corporal</p>
+          </div>
+
+          <div> 
+            <img class="img-site" src="img/equipe2.webp" alt="Funcionário(a) 2"> <br> 
+            <a class="btn" href="#">Dra. Paula</a><br>
+            <p class="especialistas">Cuidados Capilares</p>
+          </div>
+
+          <div> 
+            <img class="img-site" src="img/equipe3.webp" alt="Funcionário(a) 3"> <br> 
+            <a class="btn" href="#">Dr. Bruno</a><br> 
+            <p class="especialistas">Bem estar e Relaxamento</p>
+          </div>
+
         </div>
       </section>
     </aside>
-    <br />
+
+
+    <br>
     <div class="separador-conteudo"></div>
-    <br />
+    <br>
 
     <footer>
-      <h3>TecTreinamentos Informática</h3>
-      <h4>Desenvolvimento Front End</h4>
-      <br />
+      <h3>Saúde & beleza</h3>
+      <h4>Tudo para seu bem estar diário.</h4>
+      <br>
       <p>
         Contato: joaov.castro95@gmail.com<br />
-        whatapp: (11) 99999-9999<br />
+        Whatapp: (11) 99999-9999<br />
         CNPJ: 99.999.999/0001-99<br />
       </p>
+      <br>
+      <h4>Redes Sociais</h4>
+      <a href="#" target="_blank"><img class="redes-sociais" src="img/Instagram.webp" alt="logo Instagram"></a>
+      <a href="#" target="_blank"><img class="redes-sociais" src="img/Youtube.webp" alt="logo Youtube"></a>
+      <a href="#" target="_blank"><img class="redes-sociais" src="img/Tiktok.webp" alt="logo Tiktok"></a>
+
+      <br>
+      <h6>Desenvolvido por: João Castro.</h6>
     </footer>
+
+
+    <script src="script.js"></script>
   </body>
 </html>
